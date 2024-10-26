@@ -1,0 +1,32 @@
+{
+  "namespace": "io.slurm.clients.useraddress",
+  "type": "record",
+  "name": "UserAddress",
+  "fields": [
+    {
+      "name": "user_id",
+      "type": "string"
+    },
+    {
+      "name": "address_data",
+      "type": {
+        "type": "record",
+        "name": "AddressDataRecord",
+        "fields": [
+          {
+            "name": "line_1",
+            "type": "string"
+          },
+          {
+            "name": "line_2",
+            "type": "string"
+          },
+          {
+            "name": "zip",
+            "type": "string"
+          }
+        ]
+      }
+    }
+  ]
+}

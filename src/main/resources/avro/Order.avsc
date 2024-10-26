@@ -1,0 +1,22 @@
+{
+  "namespace": "io.slurm.clients.order",
+  "type": "record",
+  "name": "Order",
+  "fields": [
+    {
+      "name": "id",
+      "type": "string"
+    },
+    {
+      "name": "user_id",
+      "type": "string"
+    },
+    {
+      "name": "ordered_items",
+      "type": {
+        "type": "array",
+        "items": "string"
+      }
+    }
+  ]
+}

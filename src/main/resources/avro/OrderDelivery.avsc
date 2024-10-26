@@ -1,0 +1,26 @@
+{
+  "namespace": "io.slurm.clients.orderdelivery",
+  "type": "record",
+  "name": "OrderDelivery",
+  "fields": [
+    {
+      "name": "id",
+      "type": "string"
+    },
+    {
+      "name": "user_id",
+      "type": "string"
+    },
+    {
+      "name": "items",
+      "type": {
+        "type": "array",
+        "items": "string"
+      }
+    },
+    {
+      "name": "address",
+      "type": "string"
+    }
+  ]
+}
